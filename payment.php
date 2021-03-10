@@ -6,17 +6,17 @@ curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
 curl_setopt($ch, CURLOPT_HTTPHEADER,
-            array("X-Api-Key:test_5cdb53b4c878ecc11d93e882fd4",
-                  "X-Auth-Token:test_239fb755861839c3c47255a3c55"));
+            array("X-Api-Key:test_5cdb53b4c878ecc11d93e812345",
+                  "X-Auth-Token:test_239fb755861839c3c4725512345"));
 $payload = Array(
-    'purpose' => 'Taxi Lucknow',
+    'purpose' => 'For testing',
     'amount' => '10',
     'phone' => '9999999999',
     'buyer_name' => 'Ashish Sharma',
-    'redirect_url' => 'http://localhost/lucknow/responce.php',
+    'redirect_url' => 'http://www.lucknow.com/responce.php',
     'send_email' => true,
     'send_sms' => true,
-    'email' => 'ashish.bhtaxi@gmail.com',
+    'email' => 'test@gmail.com',
     'allow_repeated_payments' => false
 );
 curl_setopt($ch, CURLOPT_POST, true);
